@@ -1,6 +1,6 @@
 # Efficient Calibration of the Heston Stochastic Volatility Model
 
-## 1. Introduction
+## Introduction
 
 The Heston model is a widely used framework in quantitative finance for pricing derivative securities while accounting for stochastic volatility. Unlike the Black-Scholes model, which assumes constant volatility, the Heston model allows volatility to evolve randomly over time and revert to a long-term mean.
 
