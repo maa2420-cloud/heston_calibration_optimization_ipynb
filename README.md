@@ -5,10 +5,10 @@ This project focuses on calibrating the Heston stochastic volatility model to ma
 
 ## Team Members
 - John Wang
+- Michael Adegbite
 - Anish Reddy
 - William Qiu
 - Louie Tam
-- Michael Adegbite
 
 ## Project Outline
 1. Introduction & Motivation
