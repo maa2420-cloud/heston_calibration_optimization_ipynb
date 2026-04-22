@@ -17,3 +17,9 @@ This project focuses on calibrating the Heston stochastic volatility model to ma
 4. Baseline Optimization Method
 5. Improved Calibration Method
 6. Results & Performance Evaluation
+
+## Project Notebook
+
+Full implementation and analysis can be found here:
+
+[heston_calibration.ipynb](./heston_calibration.ipynb)
