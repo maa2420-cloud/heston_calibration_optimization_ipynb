@@ -44,7 +44,7 @@ We utilize the modified representation of the Heston characteristic function pro
 
 ### 2. Analytical Gradient Formulation
 The primary breakthrough of the referenced paper is the derivation of the exact analytical gradient of a vanilla option's price with respect to the five Heston model parameters ($v_0$, $\overline{v}$, $
-ho$, $\kappa$, $\sigma$). Because our characteristic function is continuous and easily differentiable, we can compute the Jacobian matrix analytically. This eliminates the need for computationally expensive and error-prone finite difference approximations.
+rho$, $\kappa$, $\sigma$). Because our characteristic function is continuous and easily differentiable, we can compute the Jacobian matrix analytically. This eliminates the need for computationally expensive and error-prone finite difference approximations.
 
 ### 3. Vectorized Gauss-Legendre Integration
 Pricing an option and computing its gradient under the Heston model requires evaluating Fourier integrals. Because the components of the analytical gradient share many intermediate algebraic terms with the pricing function itself, we implement a vectorized Gauss-Legendre (GL) quadrature scheme. 
