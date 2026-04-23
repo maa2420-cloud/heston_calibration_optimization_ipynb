@@ -1,6 +1,5 @@
 from heston_package import HestonPricer, VolSurfaceBuilder, HestonCalibrator, HestonParams
 
-# --- your existing code ---
 data   = prepareData()
 mid_df = data['mid_df']
 
