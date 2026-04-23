@@ -43,8 +43,7 @@ By leveraging the methodologies introduced by Cui et al., this implementation ac
 We utilize the modified representation of the Heston characteristic function proposed in the paper. By algebraically rearranging the complex terms and replacing exponential functions with hyperbolic functions, this formulation completely eliminates the discontinuities caused by the branch switching of complex functions. This ensures numerical stability across the entire parameter space and for all option maturities.
 
 ### 2. Analytical Gradient Formulation
-The primary breakthrough of the referenced paper is the derivation of the exact analytical gradient of a vanilla option's price with respect to the five Heston model parameters ($v_0$, $\overline{v}$, $
-rho$, $\kappa$, $\sigma$). Because our characteristic function is continuous and easily differentiable, we can compute the Jacobian matrix analytically. This eliminates the need for computationally expensive and error-prone finite difference approximations.
+The primary breakthrough of the referenced paper is the derivation of the exact analytical gradient of a vanilla option's price with respect to the five Heston model parameters ($v_0$, $\overline{v}$, $\rho$, $\kappa$, $\sigma$). Because our characteristic function is continuous and easily differentiable, we can compute the Jacobian matrix analytically. This eliminates the need for computationally expensive and error-prone finite difference approximations.
 
 ### 3. Vectorized Gauss-Legendre Integration
 Pricing an option and computing its gradient under the Heston model requires evaluating Fourier integrals. Because the components of the analytical gradient share many intermediate algebraic terms with the pricing function itself, we implement a vectorized Gauss-Legendre (GL) quadrature scheme. 
