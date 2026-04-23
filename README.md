@@ -31,11 +31,9 @@ This part implements a fast and robust calibration method for the Heston stochas
 > **"Full and fast calibration of the Heston stochastic volatility model"** > Yiran Cui, Sebastian del Baño Rollin, Guido Germano (2016).  
 > *arXiv:1511.08718v2*
 
-## Overview
+## Motivation
 
-Calibrating the Heston model to market implied volatility surfaces is traditionally a challenging inverse problem. Previous approaches often suffered from instability, heavy reliance on initial guesses, and high computational costs due to numerical gradient approximations (finite differences). Furthermore, the complex multi-valued logarithm in the original Heston characteristic function caused discontinuities (branch switching) for long-dated options.
-
-By leveraging the methodologies introduced by Cui et al., this implementation achieves highly efficient, deterministic calibration that is approximately ten times faster than standard numerical gradient methods, making it suitable for real-time and high-frequency trading applications.
+In previous sections we have developed a Heston calibration framework by using FFT option pricing in PyFeng, then minimizing MSE on market prices for the calibration. We want to further improve the calibration efficiency. By leveraging the methodologies introduced by Cui et al., this implementation achieves highly efficient, deterministic calibration that is approximately ten times faster than standard numerical gradient methods, making it suitable for real-time and high-frequency trading applications.
 
 ## Implemented Methodologies
 
