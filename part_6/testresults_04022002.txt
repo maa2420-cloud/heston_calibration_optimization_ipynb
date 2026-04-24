@@ -1,0 +1,18 @@
+test results for apr 2 2024:
+
+Results:
+Metric: MSE
+Baseline: 0.29228351
+Improved: 0.76218840
+
+Metric: Time (s)
+Baseline: 250.57
+Improved: 156.89
+
+Metric: Feller Condition
+Baseline: False
+Improved: STRICTLY PASS
+
+Metric: OTM MC Price Error
+Baseline: 0.0021
+Improved: 0.0021
