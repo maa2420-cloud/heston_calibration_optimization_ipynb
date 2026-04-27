@@ -1,1 +1,4 @@
 
+1) Randomizes x number of dates
+2) Runs Baseline calibration on all x dates, 
+3) Returns and Evalautes average calibration results
