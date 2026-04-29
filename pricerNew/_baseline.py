@@ -37,7 +37,9 @@ def calculate_mse_entire(model_price, market_price):
             heston_call = model_price[tenor][strike][0]
             heston_put = model_price[tenor][strike][1]
 
-            error += (market_call - heston_call) ** 2 + (market_put - heston_put) ** 2
+            # Changed to Relative Error bounded by 0.5
+            error += ((market_call - heston_call) / max(market_call, 0.5)) ** 2 
+            error += ((market_put - heston_put) / max(market_put, 0.5)) ** 2
             count += 2
 
     return error / count
