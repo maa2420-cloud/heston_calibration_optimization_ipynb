@@ -113,10 +113,6 @@ This project is inspired by the paper:
 
 **Cui, Y., del Baño Rollin, S., & Germano, G. (2017). Full and fast calibration of the Heston stochastic volatility model. *European Journal of Operational Research*, 258(3), 939-949.**
 
-The paper studies the computational challenges of option pricing under the Rough Heston model. Since the Rough Heston model involves stochastic Volterra equations, direct simulation can be computationally expensive. The authors propose multilevel and control variate Monte Carlo methods to improve efficiency and reduce variance.
-
-The paper reports that combining multilevel Monte Carlo with control variates can achieve substantial cost-adjusted variance reduction. This motivates the efficiency-focused direction of our project, where we analyze not only calibration accuracy but also convergence stability and computational performance.
-
 While our project focuses on Heston model calibration, the paper provides important motivation for studying numerical efficiency, robustness, and performance improvements in stochastic volatility models.
 
 ---
