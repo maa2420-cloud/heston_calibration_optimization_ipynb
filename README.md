@@ -110,6 +110,7 @@ Although different starting values lead to similar final errors, they result in 
 This project is inspired by the paper:
 
 **Jeng, S. W., & Kiliçman, A. (2021). _On Multilevel and Control Variate Monte Carlo Methods for Option Pricing under the Rough Heston Model_. Mathematics, 9(22), 2930.**
+
 **Cui, Y., del Baño Rollin, S., & Germano, G. (2017). Full and fast calibration of the Heston stochastic volatility model. *European Journal of Operational Research*, 258(3), 939-949.**
 
 The paper studies the computational challenges of option pricing under the Rough Heston model. Since the Rough Heston model involves stochastic Volterra equations, direct simulation can be computationally expensive. The authors propose multilevel and control variate Monte Carlo methods to improve efficiency and reduce variance.
