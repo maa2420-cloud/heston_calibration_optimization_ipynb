@@ -87,3 +87,47 @@ The full implementation is contained in:
 The final notebook is organized into 6 main sections.
 
 ---
+
+### 1. Introduction
+
+The introduction presents the Heston stochastic volatility model and explains why calibration is needed.
+
+The Heston model dynamics are written as:
+
+$$
+dS_t = \mu S_t dt + \sqrt{v_t}S_t dW_t^S
+$$
+
+$$
+dv_t = \kappa(\theta - v_t)dt + \eta\sqrt{v_t}dW_t^v
+$$
+
+$$
+dW_t^S dW_t^v = \rho dt
+$$
+
+This section motivates the calibration problem and highlights the main challenge: Heston calibration is computationally expensive, nonlinear, and sensitive to initial parameter values.
+
+---
+
+### 2. Heston Model and Pricing Framework
+
+This section develops the Heston model pricing framework.
+
+The model assumes that the underlying asset price and variance follow correlated stochastic processes:
+
+$$
+dS_t = (r - q)S_t dt + \sqrt{v_t}S_t dW_t^S
+$$
+
+$$
+dv_t = \kappa(\theta - v_t)dt + \eta\sqrt{v_t}dW_t^v
+$$
+
+$$
+dW_t^S dW_t^v = \rho dt
+$$
+
+This section establishes the pricing foundation used later in the calibration process.
+
+---
