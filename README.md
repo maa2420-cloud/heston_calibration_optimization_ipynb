@@ -1,24 +1,46 @@
-# Efficient Calibration of the Heston Stochastic Volatility Model using Numerical Optimization
+# Efficient Calibration of the Heston Stochastic Volatility Model
 
-## Overview
-
-This project studies the calibration of the Heston stochastic volatility model to market option data using numerical optimization techniques. The goal is to estimate model parameters that minimize pricing error while improving computational efficiency, stability, and robustness.
-
-The Heston model allows volatility to evolve stochastically over time, making it more realistic than constant-volatility models and capable of capturing volatility smiles observed in option markets.
-
-This project is also motivated by recent research on computational efficiency in the Rough Heston model, especially the use of multilevel and control variate Monte Carlo methods to reduce simulation cost and variance.
+This project implements an efficient calibration framework for the Heston stochastic volatility model. The goal is to estimate Heston parameters that allow model-generated option prices to closely match observed market option prices while improving numerical speed, stability, and calibration accuracy.
 
 ---
 
 ## Team Members
 
-- John Wang
-- Michael Adegbite
-- Anish Reddy
-- William Qiu
-- Louie Tam
+- John Wang  
+- Anish Reddy  
+- William Qiu  
+- Louie Tam  
+- Michael Adegbite  
 
 ---
+
+## Project Summary
+
+The Heston model is useful because it allows volatility to evolve stochastically over time, making it more realistic than constant-volatility models such as Black-Scholes. This helps capture volatility smiles and skews observed in option markets.
+
+The Heston parameter vector is:
+
+$$
+\Theta = (v_0, \kappa, \theta, \eta, \rho)
+$$
+
+where:
+
+| Parameter | Meaning |
+|---|---|
+| $v_0$ | Initial variance |
+| $\kappa$ | Mean reversion speed |
+| $\theta$ | Long-run variance |
+| $\eta$ | Volatility of volatility |
+| $\rho$ | Correlation between asset price and variance |
+
+The calibration problem is:
+
+$$
+\min_{\Theta} \sum_{i=1}^{N}
+\left(C_i^{model}(\Theta) - C_i^{market}\right)^2
+$$
+
 
 ## Project Objective
 
