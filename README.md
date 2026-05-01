@@ -170,3 +170,20 @@ The improved calibration framework incorporates:
 These enhancements improve both computational efficiency and convergence stability compared to the baseline method.
 
 ---
+
+### 6. Results and Evaluation
+
+This section evaluates calibration performance across different methods.
+
+The notebook compares baseline calibration, improved calibration, the Cui et al. approach, and a GPU-based implementation.
+
+The final method comparison reported in the notebook is:
+
+| Method | Final MSE |
+|---|---:|
+| Baseline | 0.01581340 |
+| Improved | 0.04707892 |
+| Cui et al. | 0.07711890 |
+| GPU | 6.87368833 |
+
+The results show that calibration performance depends on the numerical methods used and highlight differences in accuracy and efficiency across implementations.
