@@ -147,12 +147,13 @@ The calibration process includes:
 This section prepares the data and optimization structure used in the baseline and improved methods.
 
 ---
+### 4. Baseline Method (Naive Approach)
 
-### 4. Baseline Method
+This section implements a baseline calibration of the Heston model using a single-start L-BFGS-B optimization with simple box constraints. Market option prices are constructed by converting implied volatilities into call and put prices using the Black–Scholes formula.
 
-This section implements the baseline calibration approach using PyFeng’s FFT-based Heston pricing and a local optimization routine.
+The calibration minimizes the mean squared error between Heston model prices and market prices across multiple strikes and maturities for both calls and puts.
 
-The method repeatedly evaluates model prices and adjusts parameters to minimize pricing error. It serves as a reference point for comparing more advanced calibration techniques.
+Results show that while the baseline method converges to a similar final error (MSE ≈ 0.111582), the computational effort varies significantly across different initial guesses. This highlights sensitivity to initialization, slow convergence, and high computational cost, establishing a reference point for the improved calibration methods introduced in the next section.
 
 ---
 
