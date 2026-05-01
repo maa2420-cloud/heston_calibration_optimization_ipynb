@@ -198,3 +198,21 @@ The results show that calibration performance depends on the numerical methods u
 - The final framework emphasizes accuracy, stability, and computational efficiency.
 
 ---
+## API Reference
+
+The final notebook uses the following libraries and project modules:
+
+```python
+import numpy as np
+import pandas as pd
+import time
+import matplotlib.pyplot as plt
+
+import pyfeng as pf
+import cupy as cp
+
+from scipy.optimize import minimize, least_squares
+from scipy.stats import norm
+
+from heston_package import HestonPricer, VolSurfaceBuilder, HestonCalibrator, HestonParams
+from _baseline import runSimulation
