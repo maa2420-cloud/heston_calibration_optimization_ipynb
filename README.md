@@ -46,3 +46,20 @@ The project implements and compares several numerical techniques to improve cali
 These methods are designed to reduce computational cost and improve convergence stability during optimization.
 
 ---
+
+## Repository Structure
+
+```text
+heston_calibration_optimization_ipynb/
+│
+├── heston_calibration-FINAL.ipynb     # Main final notebook
+├── heston_calibration.ipynb           # Earlier project notebook
+├── heston_calibration-GPU.ipynb       # GPU-related experiment notebook
+├── SPY_Complete.xlsx                  # Market option/input data
+├── Part5_AnalyticalCalib/             # Analytical calibration package
+├── pricerNew/                         # Baseline pricing code
+├── part_6/                            # Final result/evaluation work
+└── README.md                          # Project documentation
+```
+
+---
