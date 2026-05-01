@@ -198,6 +198,27 @@ The results show that calibration performance depends on the numerical methods u
 - The final framework emphasizes accuracy, stability, and computational efficiency.
 
 ---
+
+## Demo Notebook
+
+A demonstration of the full Heston calibration workflow is provided in the final notebook.
+
+You can run the notebook directly in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maa2420-cloud/heston_calibration_optimization_ipynb/blob/main/heston_calibration-FINAL.ipynb)
+
+The notebook includes:
+
+- Data loading and preprocessing  
+- Construction of the volatility surface  
+- Baseline calibration  
+- Improved calibration methods  
+- Performance comparison across methods  
+
+This notebook serves as an end-to-end example of the calibration framework implemented in this project.
+
+---
+
 ## API Reference
 
 The final notebook uses the following libraries and project modules:
