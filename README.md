@@ -187,3 +187,14 @@ The final method comparison reported in the notebook is:
 | GPU | 6.87368833 |
 
 The results show that calibration performance depends on the numerical methods used and highlight differences in accuracy and efficiency across implementations.
+
+## Key Takeaways
+
+- The Heston model captures stochastic volatility more realistically than constant-volatility models.
+- Calibration is a nonlinear optimization problem.
+- PyFeng provides the baseline Heston FFT pricing engine.
+- The improved method focuses on characteristic-function pricing, analytical gradients, vectorized Gauss-Legendre integration, and Levenberg-Marquardt optimization.
+- GPU/CuPy implementation is included as part of the performance comparison.
+- The final framework emphasizes accuracy, stability, and computational efficiency.
+
+---
