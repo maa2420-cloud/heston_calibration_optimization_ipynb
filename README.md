@@ -216,3 +216,36 @@ from scipy.stats import norm
 
 from heston_package import HestonPricer, VolSurfaceBuilder, HestonCalibrator, HestonParams
 from _baseline import runSimulation
+```
+### Core Libraries
+
+| Library / Module | Usage |
+|---|---|
+| `numpy` | Numerical calculations, vectorization, exponentials, square roots, and arrays |
+| `pandas` | Loading and organizing market data |
+| `time` | Measuring runtime |
+| `matplotlib.pyplot` | Plotting and visualization in the notebook |
+| `pyfeng` | Heston FFT pricing through `pf.HestonFft` |
+| `cupy` | GPU acceleration |
+| `scipy.optimize.minimize` | Baseline local optimization |
+| `scipy.optimize.least_squares` | Levenberg-Marquardt least-squares optimization |
+| `scipy.stats.norm` | Black-Scholes call and put price construction |
+| `heston_package` | Project calibration classes for the improved method |
+| `_baseline.runSimulation` | Baseline simulation/calibration support |
+
+### Important Functions
+
+| Function / Class | Purpose |
+|---|---|
+| `tenor_to_years()` | Converts tenors such as `1M`, `3M`, and `6M` into year fractions |
+| `black_scholes_prices()` | Converts implied volatility quotes into market call and put prices |
+| `load_market_data()` | Loads the SPY dataset and builds the calibration dataset |
+| `pf.HestonFft()` | Computes Heston model prices |
+| `calculate_mse_baseline()` | Computes baseline calibration error |
+| `minimize()` | Runs baseline optimization |
+| `least_squares()` | Runs Levenberg-Marquardt least-squares optimization |
+| `HestonPricer` | Pricing engine used in the improved method |
+| `VolSurfaceBuilder` | Builds the option volatility surface |
+| `HestonCalibrator` | Runs the improved calibration method |
+| `HestonParams` | Stores Heston model parameters |
+| `runSimulation()` | Runs baseline simulation/calibration support |
