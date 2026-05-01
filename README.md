@@ -131,3 +131,35 @@ $$
 This section establishes the pricing foundation used later in the calibration process.
 
 ---
+
+### 3. Calibration Problem Formulation
+
+This section defines the calibration setup used in the notebook.
+
+The calibration process includes:
+
+- setting initial parameter guesses  
+- applying parameter bounds  
+- loading market option data  
+- constructing option prices across strikes and maturities  
+- minimizing the difference between model prices and market prices  
+
+This section prepares the data and optimization structure used in the baseline and improved methods.
+
+---
+
+### 4. Baseline Method
+
+This section implements the baseline calibration approach using PyFeng’s FFT-based Heston pricing and a local optimization routine.
+
+Important code used in this section includes:
+
+```python
+import pyfeng as pf
+from scipy.optimize import minimize
+from scipy.stats import norm
+```
+
+The baseline method repeatedly evaluates Heston model prices during optimization and minimizes the pricing error.
+
+---
