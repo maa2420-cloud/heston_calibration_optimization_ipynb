@@ -94,5 +94,68 @@ The full implementation is contained in:
 
 ---
 
+## Notebook Structure: `heston_calibration-FINAL.ipynb`
+
+The final notebook is organized into 6 main sections.
+
+---
+
+### 1. Introduction
+
+This section introduces the Heston model and explains the calibration problem.
+
+---
+
+### 2. Heston Model and Pricing Framework
+
+This section explains the Heston pricing framework using the characteristic function.
+
+---
+
+### 3. Calibration Problem Formulation
+
+This section formulates calibration as a numerical optimization problem.
+
+---
+
+### 4. Baseline Method
+
+This section implements the baseline calibration method using PyFeng Heston pricing and `scipy.optimize.minimize`.
+
+**Baseline sensitivity table:**
+
+| Initial Guess | Final MSE | Iterations | Objective Evaluations | Runtime (sec) | Success |
+|---|---:|---:|---:|---:|---|
+| `[0.021898672324, 1.0, 0.021898672324, 0.3, -0.3]` | 0.111582 | 93 | 738 | 33.201201 | True |
+| `[0.021898672324, 3.0, 0.021898672324, 1.0, -0.7]` | 0.111582 | 90 | 684 | 34.788783 | True |
+| `[0.15, 5.0, 0.15, 2.0, -0.2]` | 0.111582 | 134 | 1038 | 41.956198 | True |
+
+---
+
+### 5. Improved Calibration Method
+
+This section represents the main contribution of the project.
+
+The improved approach focuses on:
+
+- Continuous Characteristic Function  
+- Analytical Gradient Formulation  
+- Vectorized Gauss-Legendre Integration  
+- Levenberg-Marquardt Optimization  
+
+---
+
+### 6. Results and Evaluation
+
+**Final method comparison:**
+
+| Method | Final MSE |
+|---|---:|
+| Baseline | 0.01581340 |
+| Improved | 0.04707892 |
+| Cui et al. | 0.07711890 |
+| GPU | 6.87368833 |
+
+---
 
 
