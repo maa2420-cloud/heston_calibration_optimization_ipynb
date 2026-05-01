@@ -18,7 +18,7 @@ C_{\text{model}}(K_i, T_i) - C_{\text{market}}(K_i, T_i)
 \right)^2
 $$
 
-where \( C_{\text{model}} \) represents the model-generated option price and \( C_{\text{market}} \) denotes the observed market price for strike \( K_i \) and maturity \( T_i \).
+where $C_{\text{model}}$ represents the model-generated option price and $C_{\text{market}}$ denotes the observed market price for strike $K_i$ and maturity $T_i$.
 
 The main challenge lies in the high computational cost and numerical instability of the calibration process. This project explores efficient numerical methods to improve both speed and stability.
 
