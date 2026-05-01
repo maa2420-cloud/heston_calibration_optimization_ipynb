@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mafn-heston-calib"       =
+name = "mafn-heston-calib"       
 version = "0.1.0"
 description = "Efficient numerical calibration of the Heston stochastic volatility model."
 readme = "README.md"
