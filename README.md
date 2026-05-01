@@ -73,3 +73,17 @@ Cui, Y., del Baño Rollin, S., & Germano, G. (2017). *Full and Fast Calibration 
 The project follows similar ideas by improving calibration efficiency through characteristic-function pricing, analytical gradient formulation, efficient numerical integration, and optimization techniques.
 
 ---
+
+## Final Project Notebook
+
+The full implementation is contained in:
+
+[View Final Notebook](heston_calibration-FINAL.ipynb)
+
+---
+
+## Notebook Structure: `heston_calibration-FINAL.ipynb`
+
+The final notebook is organized into 6 main sections.
+
+---
