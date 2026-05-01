@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mafn-heston-calib"       =
+version = "0.1.0"
+description = "Efficient numerical calibration of the Heston stochastic volatility model."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Anish Reddy"},
+    { name = "John Wang" },
+    { name = "William Qiu" },
+    { name = "Louie Tam" },
+    { name = "Michael Adegbite" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas",
+    "scipy",
+    "pyfeng",
+    "openpyxl"
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+gpu = ["cupy-cuda12x; platform_system=='Linux'"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["heston_calib*"]      
+
+[project.urls]
+Homepage = "https://github.com/maa2420-cloud/heston_calibration_optimization_ipynb"
