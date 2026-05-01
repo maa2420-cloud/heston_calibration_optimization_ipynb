@@ -152,14 +152,21 @@ This section prepares the data and optimization structure used in the baseline a
 
 This section implements the baseline calibration approach using PyFeng’s FFT-based Heston pricing and a local optimization routine.
 
-Important code used in this section includes:
+The method repeatedly evaluates model prices and adjusts parameters to minimize pricing error. It serves as a reference point for comparing more advanced calibration techniques.
 
-```python
-import pyfeng as pf
-from scipy.optimize import minimize
-from scipy.stats import norm
-```
+---
 
-The baseline method repeatedly evaluates Heston model prices during optimization and minimizes the pricing error.
+### 5. Improved Calibration Method
+
+This section presents the main contribution of the project.
+
+The improved calibration framework incorporates:
+
+- Continuous Characteristic Function  
+- Analytical Gradient Formulation  
+- Vectorized Gauss-Legendre Integration  
+- Levenberg-Marquardt Optimization  
+
+These enhancements improve both computational efficiency and convergence stability compared to the baseline method.
 
 ---
