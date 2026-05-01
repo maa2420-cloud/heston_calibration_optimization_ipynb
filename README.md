@@ -86,7 +86,13 @@ The connection to the paper is that both focus on making Heston calibration fast
 
 ---
 
+## Final Project Notebook
 
+The full implementation is contained in:
+
+[View Final Notebook](heston_calibration-FINAL.ipynb)
+
+---
 
 
 
