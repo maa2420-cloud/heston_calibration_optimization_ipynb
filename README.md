@@ -71,6 +71,22 @@ heston_calibration_optimization_ipynb/
 
 ---
 
+## Reference Paper Connection
+
+This project is connected to the Heston stochastic volatility framework and the paper:
+
+Cui, Y., del Baño Rollin, S., & Germano, G. (2017). *Full and Fast Calibration of the Heston Stochastic Volatility Model.*
+
+The connection to the paper is that both focus on making Heston calibration faster and more stable. The project follows the same motivation by improving the calibration process through:
+
+- characteristic function pricing,
+- analytical gradient ideas,
+- efficient numerical integration,
+- and nonlinear least-squares optimization.
+
+---
+
+
 
 
 
