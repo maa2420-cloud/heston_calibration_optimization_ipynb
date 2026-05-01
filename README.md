@@ -149,11 +149,11 @@ This section prepares the data and optimization structure used in the baseline a
 ---
 ### 4. Baseline Method (Naive Approach)
 
-This section implements a baseline calibration of the Heston model using a single-start L-BFGS-B optimization with simple box constraints. Market option prices are constructed by converting implied volatilities into call and put prices using the Black–Scholes formula.
+This section implements a baseline calibration of the Heston model using a single-start L-BFGS-B optimizer with simple box constraints. Market option prices are obtained by converting implied volatilities into call and put prices using the Black–Scholes formula.
 
-The calibration minimizes the mean squared error between Heston model prices and market prices across multiple strikes and maturities for both calls and puts.
+The calibration minimizes the mean squared error between Heston model prices and market prices across multiple strikes and maturities.
 
-Results show that while the baseline method converges to a similar final error (MSE ≈ 0.111582), the computational effort varies significantly across different initial guesses. This highlights sensitivity to initialization, slow convergence, and high computational cost, establishing a reference point for the improved calibration methods introduced in the next section.
+Although the method converges to a similar final error (MSE ≈ 0.111582), the computational effort varies significantly across initial guesses. This reflects sensitivity to initialization, slow convergence, and high computational cost, providing a benchmark for the improved methods in the next section.
 
 ---
 
