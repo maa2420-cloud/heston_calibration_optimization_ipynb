@@ -23,3 +23,26 @@ where $C_{\text{model}}$ represents the model-generated option price and $C_{\te
 The main challenge lies in the high computational cost and numerical instability of the calibration process. This project explores efficient numerical methods to improve both speed and stability.
 
 ---
+
+## Team Members
+
+- John Wang  
+- Anish Reddy  
+- William Qiu  
+- Louie Tam  
+- Michael Adegbite  
+
+---
+
+## Implemented Methodologies
+
+The project implements and compares several numerical techniques to improve calibration performance:
+
+- Continuous Characteristic Function  
+- Analytical Gradient Formulation  
+- Vectorized Gauss-Legendre Integration  
+- Levenberg-Marquardt Optimization  
+
+These methods are designed to reduce computational cost and improve convergence stability during optimization.
+
+---
