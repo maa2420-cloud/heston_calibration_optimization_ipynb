@@ -1,4 +1,6 @@
 def test_import():
-    """Test that the package can be imported successfully."""
+    # This checks if the package and its submodules are reachable
     import heston_calib
-    assert True 
+    from heston_calib import baseline
+    from heston_calib import improved
+    assert True
