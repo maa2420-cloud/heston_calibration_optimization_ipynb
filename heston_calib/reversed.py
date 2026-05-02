@@ -28,7 +28,7 @@ import os
 # This guarantees the recovery test exercises the same code path as
 # main_baseline.runSimulation. If you rename your baseline file, fix
 # this import.
-from _baseline import hestonOptimization, valid_strike, valid_tenor, TENOR_YEARS
+from .baseline import hestonOptimization, valid_strike, valid_tenor, TENOR_YEARS
 
 
 # ─────────────────────────────────────────────────────────────────────────────
