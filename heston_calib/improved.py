@@ -7,7 +7,7 @@ from scipy.optimize import minimize
 import tracemalloc
 import time
 import os
-import InitializationHelper as helper
+from . import initialization_helper as helper
 
 
 valid_strike = [30, 40, 60, 80, 90, 95, 97.5, 100, 105, 110, 120, 130, 150, 300]
