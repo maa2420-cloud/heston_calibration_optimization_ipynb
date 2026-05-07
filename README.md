@@ -78,7 +78,7 @@ The project follows similar ideas by improving calibration efficiency through ch
 
 The full implementation is contained in:
 
-[View Final Notebook](heston_calibration-FINAL.ipynb)
+[View Final Notebook](https://github.com/maa2420-cloud/heston_calibration_optimization_ipynb/blob/main/notebooks/demo.ipynb)
 
 ---
 
