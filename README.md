@@ -204,7 +204,7 @@ A demonstration of the full Heston calibration workflow is provided in the final
 
 You can run the notebook directly in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maa2420-cloud/heston_calibration_optimization_ipynb/blob/main/heston_calibration-FINAL.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maa2420-cloud/heston_calibration_optimization_ipynb/blob/main/notebooks/demo.ipynb)
 
 The notebook includes:
 
