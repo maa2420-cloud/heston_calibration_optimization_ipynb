@@ -20,6 +20,7 @@ dependencies = [
     "numpy>=1.24",
     "pandas",
     "scipy",
+    "statsmodels",
     "pyfeng",
     "openpyxl"
 ]
