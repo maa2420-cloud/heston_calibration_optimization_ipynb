@@ -16,11 +16,22 @@ from .improved import (
 # Expose the parameter recovery self-test
 from .reversed import main as run_recovery_test
 
+from .heston_package import (
+    HestonPricer, 
+    HestonParams, 
+    OptionContract, 
+    HestonCalibrator
+)
+
 __all__ = [
     "heston_opt_baseline",
     "run_sim_baseline",
     "heston_opt_improved",
     "run_sim_improved",
     "pricer",
-    "run_recovery_test"
+    "run_recovery_test",
+    "HestonPricer",
+    "HestonParams",
+    "OptionContract",
+    "HestonCalibrator"
 ]
