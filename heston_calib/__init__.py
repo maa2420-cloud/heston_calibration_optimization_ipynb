@@ -29,7 +29,7 @@ __all__ = [
     "heston_opt_improved",
     "run_sim_improved",
     "pricer",
-    "run_recovery_test",
+    "run_recovery_test"
     "HestonPricer",
     "HestonParams",
     "OptionContract",
