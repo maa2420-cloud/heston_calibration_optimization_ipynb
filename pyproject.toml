@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mafn-heston-calib"       
-version = "0.1.0"
+version = "0.1.1"
 description = "Efficient numerical calibration of the Heston stochastic volatility model."
 readme = "README.md"
 license = { text = "MIT" }
